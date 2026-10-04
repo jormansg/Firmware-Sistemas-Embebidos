@@ -1,5 +1,5 @@
 // actuadores.cpp
 #include <Arduino.h>
-void activarActuador(int pin) {
-    digitalWrite(pin, HIGH);
+void activarRele(int pin, bool estado) {
+    digitalWrite(pin, estado ? HIGH : LOW);
 }
